@@ -8,7 +8,7 @@ This Program is Capable of Downloading Videos From YouTube.
 """
 setup(
     name= "PYYTDownloader",
-    version= '0.1.10',
+    version= '0.0.1',
     author= "Sachin Acharya",
     author_email= "acharyaraj71@gmail.com",
     license="MIT",

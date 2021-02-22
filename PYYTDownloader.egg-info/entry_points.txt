@@ -1,0 +1,3 @@
+[console_scripts]
+pyytdownloader = PYYTDownloader.__main__:main
+

@@ -1,0 +1,16 @@
+Metadata-Version: 1.0
+Name: PYYTDownloader
+Version: 0.0.1
+Summary: YouTube Video Downloader
+Home-page: UNKNOWN
+Author: Sachin Acharya
+Author-email: acharyaraj71@gmail.com
+License: MIT
+Description: 
+        This Program is Capable of Downloading Videos From YouTube.
+            This Program can download video From PlayList or Individual Video with just
+            URL (PlayList or YouTube URL) and Video Name(Single Video at a time).
+            This Package is Created By Sachin Acharya under MIT license
+        
+Keywords: Downloader YouTube PlayList Single PyTube
+Platform: UNKNOWN
