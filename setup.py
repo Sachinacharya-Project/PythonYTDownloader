@@ -7,17 +7,22 @@ This Program is Capable of Downloading Videos From YouTube.
     This Package is Created By Sachin Acharya under MIT license
 """
 setup(
-    name= "PythonYTDownloader",
-    version= '0.1.2',
+    name= "PYYTDownloader",
+    version= '0.1.10',
     author= "Sachin Acharya",
     author_email= "acharyaraj71@gmail.com",
     license="MIT",
     keywords= "Downloader YouTube PlayList Single PyTube",
     description= "YouTube Video Downloader",
     long_description= description_long,
-    packages=['PythonYTDownloader'],
-    install_requires=['pytube', 'requests']
-    )
+    packages=['PYYTDownloader'],
+    install_requires=['pytube', 'requests'],
+    entry_points = {
+        'console_scripts': [
+            'pyytdownloader = PYYTDownloader.__main__:main'
+        ]
+    }
+)
 
 # python .\setup.py sdist bdist_wheel
 # Import PythonYTDownloader
