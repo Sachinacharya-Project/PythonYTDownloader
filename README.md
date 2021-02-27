@@ -30,9 +30,10 @@ But if path is given, Video and Audio will be stored in given PATH inside Videos
 
 ## Example
 ````python
-import PythonYTDownloader
-data = PythonYTDownloader.ytdownload('falling by harry styles', 'video') # Downlading using only name 
-# This data returns True or False according to downloaded or not
+from PYYTDownloader import YouTubeVideoDownloader
+downloader = YouTubeVideoDownloader()
+data = downloader.ytdownload('falling by harry styles', 'video') # Downlading using only name 
+# This 'data' returns True or False according to isdownloaded or not
 ````
 ## Command-line
   * **pyytdownloader -h**: Shows Helps
