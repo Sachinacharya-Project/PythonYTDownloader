@@ -77,6 +77,7 @@ def rename(direc):
         print("\nFile Already Exist")
 class YouTubeVideoDownloader():
     def downloader(self ,video_url, video_format, **kargs):
+        "Download videos or audios from U-Tube"
         takenPath = kargs.get('path', '__default')
         if takenPath == '__default':
             takenPath = os.environ.get('USERPROFILE')
@@ -137,13 +138,13 @@ class YouTubeVideoDownloader():
             It is optional.
             It specifies where the files should be downloaded.
             By Default
-                {}/Musics for Audio
-                {}/Video for Video
+                ROOT/Musics for Audio
+                ROOT/Video for Video
             But by providing argument as
                 path='certain_path' video or audio will be downloaded in certain_path
         eg:
         ytdownload(video_url, 'audio', path='C:/Users/root/Musics')
-        """.format(os.environ.get('USERPROFILE'), os.environ.get('USERPROFILE'))
+        """
         path = kargs.get('path', '__default')
         video_src_type = ''
         if str(video_url).startswith('https://www.youtube.com'):

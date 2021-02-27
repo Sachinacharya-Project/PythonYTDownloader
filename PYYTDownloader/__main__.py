@@ -259,7 +259,10 @@ def main():
     path = args.path
     if path == None:
         path = '__default'
-    print('Check {}\\Music for Music and \\Videos for Vidoes'.format(os.environ.get('USERPROFILE')))
+    if form == 'audio':
+        print('Check {}\\Music'.format(os.environ.get('USERPROFILE')))
+    else:
+        print('Check {}\\Videos'.format(os.environ.get('USERPROFILE')))
     if ytdownload(url, form, path=path) ==True:
         print('Downloaded Successfully ')
     else:
